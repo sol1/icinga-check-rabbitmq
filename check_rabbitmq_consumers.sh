@@ -56,12 +56,15 @@ if [ -z "${u}" ] || [ -z "${p}" ] || [ -z "${a}" ] || [ -z "${q}" ] || [ -z "${c
 	usage
 fi
 
-if ! [ -x `which curl` ]; then
+curl=`which curl`
+jq=`which jq`
+
+if [ -z "${curl}" ] || ! [ -x "${curl}" ]; then
 	echo "UNKNOWN: curl not found"
 	exit ${E_UNKNOWN}
 fi
 
-if ! [ -x `which jq` ]; then
+if [ -z "${jq}" ] || ! [ -x "${jq}" ]; then
 	echo "UNKNOWN: jq not found"
 	exit ${E_UNKNOWN}
 fi
