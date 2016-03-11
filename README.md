@@ -22,7 +22,7 @@ from (probably localhost).
 You also need the following utilities in your `$PATH`:
 
  * [curl](http://curl.haxx.se/)
- * [jq](https://stedolan.github.io/jq/)
+ * [jq](https://stedolan.github.io/jq/) version 1.5 or above
 
 ## TODO
 
