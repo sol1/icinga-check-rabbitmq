@@ -2,10 +2,6 @@
 
 Some lightweight Nagios/Icinga check plugins for RabbitMQ.
 
-## Status
-
-Alpha, in testing, not suitable for production use.
-
 ## Checks
 
 The following checks are included:
