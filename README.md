@@ -7,6 +7,7 @@ Some lightweight Nagios/Icinga check plugins for RabbitMQ.
 The following checks are included:
 
  * `check_rabbitmq_consumers.sh`: Number of consumers on a queue
+ * `check_rabbitmq_queuesize.sh`: Number of messages in a queue
 
 ## Requirements
 
