@@ -72,7 +72,11 @@ fi
 response=`curl -s -u $u:$p -o - "$a"`
 
 # Check for a simple error provided by the API
-api_error=`echo $response | jq ".error?"`
+if [ -z "$response" ]; then
+	api_error=`echo $response | jq ".error?"`
+else
+	api_error='';
+fi
 
 if ! [ -z "${api_error}" ]; then
 	echo "CRITICAL: API returned: ${api_error}"
