@@ -24,3 +24,6 @@ You also need the following utilities in your `$PATH`:
 ## TODO
 
  * TODO
+
+## Source
+https://github.com/sol1/icinga-check-rabbitmq
